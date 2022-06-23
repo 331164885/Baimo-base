@@ -1,0 +1,34 @@
+{
+    "name": "baimo\/base",
+    "description": "Package description here.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hey",
+            "email": "2223423872@qq.com"
+        }
+    ],
+    "require": {
+        "casbin/laravel-authz": "^3.0",
+        "mews/captcha": "^3.2",
+        "tymon/jwt-auth": "^1.0",
+        "baimo/core": "dev-master",
+        "baimo/files": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Baimo\\Base\\": "src"
+        }
+    },
+    "extra": {
+        "larvel": {
+            "providers": [
+                "Baimo\\Base\\Providers\\ModulesServiceProvider"
+            ],
+            "dont-discover":[],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
